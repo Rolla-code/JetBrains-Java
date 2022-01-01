@@ -36,6 +36,6 @@ class InputStringReader {
     public Optional<String> getValue() {
         // implement
         String value = new Scanner(System.in).nextLine();
-        return !Objects.equals(value, "empty") ? Optional.ofNullable(value) : Optional.empty();
+        return !Objects.equals(value, "empty") ? Optional.of(value) : Optional.empty();
     }
 }
